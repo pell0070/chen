@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game - Classic Number Puzzle Game</title>
+    <meta name="description" content="Play the classic 2048 game! Combine matching numbers to reach 2048. Simple to learn but challenging to master. Test your strategy skills!">
+    <meta name="keywords" content="2048 game, number puzzle, strategy game, brain game, math game, sliding puzzle, classic game, online game">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body class="bg-gray-50">
+    <main class="min-h-screen py-3">
+        <!-- Game Section -->
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="w-full flex flex-col items-center">
+                <div class="w-full h-screen sm:h-auto sm:max-w-3xl sm:aspect-[4/3] relative">
+                    <iframe
+                        title="2048 Game"
+                        src="https://games.crazygames.com/en_US/2048/index.html?aaConfigcatTest=true&v=1.322"
+                        class="absolute top-0 left-0 w-full h-full border-0 sm:rounded-lg sm:shadow-lg"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+
+            <!-- Intro Section -->
+            <div class="mt-12 flex flex-col items-center px-4 sm:px-6 lg:px-8">
+                <!-- Header Section -->
+                <div class="w-full max-w-4xl text-center space-y-8 mb-12">
+                    <h1 class="text-5xl font-bold text-gray-900">2048</h1>
+                    <p class="text-gray-600">
+                        2048 is a single-player sliding tile puzzle game developed by Gabriele Cirulli. 
+                        Merge tiles with the same power of 2 to get the total sum. The goal is to keep 
+                        merging tiles this way until you reach 2048!
+                    </p>
+                </div>
+
+                <!-- Main Content -->
+                <div class="max-w-6xl w-full space-y-10">
+                    <div class="bg-white p-8 lg:p-12 rounded-xl shadow-md border border-gray-100">
+                        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 text-center">How to Play 2048</h2>
+
+                        <!-- Review Quote -->
+                        <div class="mb-12">
+                            <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                                <p class="italic text-gray-700">
+                                    "My kids enjoy the simple challenge of merging the numbers to clear space and stay alive. 
+                                    It's great to see them figure out strategies to merge bigger and bigger numbers efficiently. 
+                                    They don't realize it, but they are learning to make quick additions. There's also a lot of 
+                                    geographical thinking ahead to avoid making a move that gets you stuck."
+                                </p>
+                                <p class="text-sm text-gray-600 mt-2">- Review by FamilyGamingDatabase</p>
+                            </div>
+                        </div>
+
+                        <!-- How to Play -->
+                        <div class="mb-12">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-6">How to Play</h2>
+                            <div class="text-lg text-gray-600 space-y-4">
+                                <p>
+                                    Use your arrow keys to move all the tiles in the specified direction. Every time you move, 
+                                    another tile with a value of 2 or 4 appears. When two tiles with the same number touch, 
+                                    they merge into one, doubling the numerical value.
+                                </p>
+                                <p>
+                                    The final objective is to create a tile with the number 2048. Be careful with your moves - 
+                                    if the board fills up completely before reaching 2048, it's game over!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Game Mechanics -->
+                        <div class="mb-12">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-6">Game Mechanics</h2>
+                            <div class="bg-gray-50 p-6 rounded-lg">
+                                <ul class="space-y-4">
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-yellow-500 font-bold">•</span>
+                                        <span>Use arrow keys or swipe gestures to move all tiles</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-yellow-500 font-bold">•</span>
+                                        <span>Tiles with the same number merge when they collide</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-yellow-500 font-bold">•</span>
+                                        <span>New tile (2 or 4) appears after each move</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-yellow-500 font-bold">•</span>
+                                        <span>Game ends when no more moves are possible</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Strategy Tips -->
+                        <div class="mb-12">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-6">Strategy Tips</h2>
+                            <div class="bg-yellow-50 p-6 rounded-lg">
+                                <ul class="space-y-4">
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-yellow-600 font-bold">•</span>
+                                        <span>Keep your highest number tile in a corner for easy access</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-yellow-600 font-bold">•</span>
+                                        <span>Build a chain of decreasing numbers around your highest tile</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-yellow-600 font-bold">•</span>
+                                        <span>Avoid spreading big numbers across the board - they'll become inaccessible</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Section -->
+                        <div class="space-y-6">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+                            
+                            <!-- FAQ Items -->
+                            <div class="space-y-4">
+                                <!-- FAQ Item 1 -->
+                                <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                                    <h3 class="text-lg font-semibold text-gray-900 p-4 pb-2">
+                                        What happens when I reach 2048?
+                                    </h3>
+                                    <div class="text-gray-600 px-4 pb-4">
+                                        You win! But you can continue playing to achieve higher scores and tiles like 4096 or 8192.
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 2 -->
+                                <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                                    <h3 class="text-lg font-semibold text-gray-900 p-4 pb-2">
+                                        Is there a time limit?
+                                    </h3>
+                                    <div class="text-gray-600 px-4 pb-4">
+                                        No, you can take as much time as you need to think about your moves. The game ends only when no more moves are possible.
+                                    </div>
+                                </div>
+
+                                <!-- Additional FAQ Items... -->
+                                <!-- 复制其他 FAQ 项... -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-12">
+        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+            <p class="text-center text-sm text-gray-500">
+                © 2024 2048 Game. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
